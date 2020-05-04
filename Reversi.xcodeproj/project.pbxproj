@@ -66,30 +66,101 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D636B3A123D43203007F370F /* Views */ = {
+		26BD904A2460170A00FA850D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D642BDB723A9FE4500396732 /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26BD904B2460172000FA850D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26BD904C2460172700FA850D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D642BDD723AA0B5700396732 /* Disk.swift */,
+			);
+			name = Models;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26BD904D2460173700FA850D /* States */ = {
+			isa = PBXGroup;
+			children = (
+				26BD9052246017FC00FA850D /* Binders */,
+				26BD9051246017F900FA850D /* Stores */,
+			);
+			name = States;
+			path = States;
+			sourceTree = "<group>";
+		};
+		26BD904E2460173E00FA850D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utilities;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		26BD904F246017A600FA850D /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Pages;
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		26BD9050246017A900FA850D /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				D642BDDB23AA137C00396732 /* BoardView.swift */,
 				D642BDD523AA0B3900396732 /* CellView.swift */,
 				D636B39E23D35043007F370F /* DiskView.swift */,
 			);
-			name = Views;
+			name = Components;
+			path = Components;
 			sourceTree = "<group>";
 		};
-		D636B3A423D432D3007F370F /* DataTypes */ = {
+		26BD9051246017F900FA850D /* Stores */ = {
 			isa = PBXGroup;
 			children = (
-				D642BDD723AA0B5700396732 /* Disk.swift */,
 			);
-			name = DataTypes;
+			name = Stores;
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		26BD9052246017FC00FA850D /* Binders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Binders;
+			path = Binders;
+			sourceTree = "<group>";
+		};
+		D636B3A123D43203007F370F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26BD9050246017A900FA850D /* Components */,
+				26BD904F246017A600FA850D /* Pages */,
+			);
+			name = Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D642BDA723A9FE4500396732 = {
 			isa = PBXGroup;
 			children = (
+				D642BDB123A9FE4500396732 /* Products */,
 				D642BDB223A9FE4500396732 /* Reversi */,
 				D642BDC923A9FE4700396732 /* ReversiTests */,
-				D642BDB123A9FE4500396732 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,15 +176,18 @@
 		D642BDB223A9FE4500396732 /* Reversi */ = {
 			isa = PBXGroup;
 			children = (
-				D642BDB323A9FE4500396732 /* AppDelegate.swift */,
-				D642BDB523A9FE4500396732 /* SceneDelegate.swift */,
-				D642BDB723A9FE4500396732 /* ViewController.swift */,
-				D642BDB923A9FE4500396732 /* Main.storyboard */,
-				D642BDBC23A9FE4700396732 /* Assets.xcassets */,
-				D642BDBE23A9FE4700396732 /* LaunchScreen.storyboard */,
-				D642BDC123A9FE4700396732 /* Info.plist */,
+				26BD904A2460170A00FA850D /* Controllers */,
+				26BD904B2460172000FA850D /* Extensions */,
+				26BD904C2460172700FA850D /* Models */,
+				26BD904D2460173700FA850D /* States */,
+				26BD904E2460173E00FA850D /* Utilities */,
 				D636B3A123D43203007F370F /* Views */,
-				D636B3A423D432D3007F370F /* DataTypes */,
+				D642BDB323A9FE4500396732 /* AppDelegate.swift */,
+				D642BDBC23A9FE4700396732 /* Assets.xcassets */,
+				D642BDC123A9FE4700396732 /* Info.plist */,
+				D642BDBE23A9FE4700396732 /* LaunchScreen.storyboard */,
+				D642BDB923A9FE4500396732 /* Main.storyboard */,
+				D642BDB523A9FE4500396732 /* SceneDelegate.swift */,
 			);
 			path = Reversi;
 			sourceTree = "<group>";
@@ -121,8 +195,8 @@
 		D642BDC923A9FE4700396732 /* ReversiTests */ = {
 			isa = PBXGroup;
 			children = (
-				D642BDCA23A9FE4700396732 /* ReversiTests.swift */,
 				D642BDCC23A9FE4700396732 /* Info.plist */,
+				D642BDCA23A9FE4700396732 /* ReversiTests.swift */,
 			);
 			path = ReversiTests;
 			sourceTree = "<group>";
@@ -263,6 +337,7 @@
 				D642BDBA23A9FE4500396732 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		D642BDBE23A9FE4700396732 /* LaunchScreen.storyboard */ = {
@@ -271,6 +346,7 @@
 				D642BDBF23A9FE4700396732 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
