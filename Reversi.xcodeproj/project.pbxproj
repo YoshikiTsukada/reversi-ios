@@ -11,6 +11,8 @@
 		2670B89A24602F6600A3EB49 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670B89924602F6600A3EB49 /* Action.swift */; };
 		2670B89C24602FF400A3EB49 /* ViewControllerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670B89B24602FF400A3EB49 /* ViewControllerStore.swift */; };
 		2670B89E2460348800A3EB49 /* ViewControllerViewBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670B89D2460348800A3EB49 /* ViewControllerViewBinder.swift */; };
+		2670B8A0246088D800A3EB49 /* ReversiStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670B89F246088D800A3EB49 /* ReversiStore.swift */; };
+		2670B8A224608C8900A3EB49 /* ActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2670B8A124608C8900A3EB49 /* ActionCreator.swift */; };
 		26BD9055246021B400FA850D /* ViewControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD9054246021B400FA850D /* ViewControllerView.xib */; };
 		26BD90572460250D00FA850D /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD90562460250D00FA850D /* ViewControllerView.swift */; };
 		4A3F1F419A9C0E05DA34A3A5 /* Pods_ReversiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8CD8C52DCFD084D8B04464 /* Pods_ReversiTests.framework */; };
@@ -42,8 +44,10 @@
 		262AEAE59EC60B602EA2CC43 /* Pods-Reversi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reversi.release.xcconfig"; path = "Target Support Files/Pods-Reversi/Pods-Reversi.release.xcconfig"; sourceTree = "<group>"; };
 		2670B89724602F3B00A3EB49 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		2670B89924602F6600A3EB49 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
-		2670B89B24602FF400A3EB49 /* ViewControllerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerStore.swift; path = ViewControllerStore.swift; sourceTree = "<group>"; };
-		2670B89D2460348800A3EB49 /* ViewControllerViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerViewBinder.swift; path = ViewControllerViewBinder.swift; sourceTree = "<group>"; };
+		2670B89B24602FF400A3EB49 /* ViewControllerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerStore.swift; sourceTree = "<group>"; };
+		2670B89D2460348800A3EB49 /* ViewControllerViewBinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViewBinder.swift; sourceTree = "<group>"; };
+		2670B89F246088D800A3EB49 /* ReversiStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReversiStore.swift; sourceTree = "<group>"; };
+		2670B8A124608C8900A3EB49 /* ActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
 		26BD9054246021B400FA850D /* ViewControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerView.xib; sourceTree = "<group>"; };
 		26BD90562460250D00FA850D /* ViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
 		8DE0B02B4729CD2AFCCDDEB6 /* Pods-ReversiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReversiTests.release.xcconfig"; path = "Target Support Files/Pods-ReversiTests/Pods-ReversiTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 				26BD9052246017FC00FA850D /* Binders */,
 				26BD9051246017F900FA850D /* Stores */,
 				2670B89924602F6600A3EB49 /* Action.swift */,
+				2670B8A124608C8900A3EB49 /* ActionCreator.swift */,
 				2670B89724602F3B00A3EB49 /* Dispatcher.swift */,
 			);
 			path = States;
@@ -160,6 +165,7 @@
 		26BD9051246017F900FA850D /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				2670B89F246088D800A3EB49 /* ReversiStore.swift */,
 				2670B89B24602FF400A3EB49 /* ViewControllerStore.swift */,
 			);
 			path = Stores;
@@ -414,9 +420,11 @@
 				D636B39F23D35043007F370F /* DiskView.swift in Sources */,
 				D642BDD623AA0B3900396732 /* CellView.swift in Sources */,
 				2670B89824602F3B00A3EB49 /* Dispatcher.swift in Sources */,
+				2670B8A224608C8900A3EB49 /* ActionCreator.swift in Sources */,
 				2670B89A24602F6600A3EB49 /* Action.swift in Sources */,
 				D642BDD823AA0B5700396732 /* Disk.swift in Sources */,
 				D642BDB823A9FE4500396732 /* ViewController.swift in Sources */,
+				2670B8A0246088D800A3EB49 /* ReversiStore.swift in Sources */,
 				D642BDDC23AA137C00396732 /* BoardView.swift in Sources */,
 				26BD90572460250D00FA850D /* ViewControllerView.swift in Sources */,
 				D642BDB423A9FE4500396732 /* AppDelegate.swift in Sources */,

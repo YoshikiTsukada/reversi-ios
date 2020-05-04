@@ -9,21 +9,17 @@
 import RxCocoa
 import RxSwift
 
-final class ViewControllerStore {
-    static let shared: ViewControllerStore = .init()
+protocol StoreBase {
+    func accept(_ action: Action)
+}
 
+final class ViewControllerStore: StoreBase {
     private let disposeBag = DisposeBag()
 
-    private init(dispatcher: Dispatcher = .shared) {
-        dispatcher.register { [weak self] action in
-            guard let me = self else { return }
-
-            switch action {
-
-            default: break
-            }
+    func accept(_ action: Action) {
+        switch action {
+        default: break
         }
-        .disposed(by: disposeBag)
     }
 }
 

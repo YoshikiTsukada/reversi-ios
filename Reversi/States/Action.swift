@@ -7,4 +7,6 @@
 //
 
 enum Action {
+    case setStore(StoreBase)
+    case deleteStore(StoreBase)
 }
