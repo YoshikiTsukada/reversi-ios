@@ -1,23 +1,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-//    @IBOutlet private var boardView: BoardView!
-//
-//    @IBOutlet private var messageDiskView: DiskView!
-//    @IBOutlet private var messageLabel: UILabel!
-//    @IBOutlet private var messageDiskSizeConstraint: NSLayoutConstraint!
-//    /// Storyboard 上で設定されたサイズを保管します。
-//    /// 引き分けの際は `messageDiskView` の表示が必要ないため、
-//    /// `messageDiskSizeConstraint.constant` を `0` に設定します。
-//    /// その後、新しいゲームが開始されたときに `messageDiskSize` を
-//    /// 元のサイズで表示する必要があり、
-//    /// その際に `messageDiskSize` に保管された値を使います。
-//    private var messageDiskSize: CGFloat!
-//
-//    @IBOutlet private var playerControls: [UISegmentedControl]!
-//    @IBOutlet private var countLabels: [UILabel]!
-//    @IBOutlet private var playerActivityIndicators: [UIActivityIndicatorView]!
-//
+    private let store: ViewControllerStore = .shared
+    private var binder: ViewControllerViewBinder?
+
 //    /// どちらの色のプレイヤーのターンかを表します。ゲーム終了時は `nil` です。
 //    private var turn: Disk? = .dark
 //
@@ -25,10 +11,14 @@ class ViewController: UIViewController {
 //    private var isAnimating: Bool { animationCanceller != nil }
 //
 //    private var playerCancellers: [Disk: Canceller] = [:]
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let view = view as? ViewControllerView {
+            binder = ViewControllerViewBinder(view: view)
+        }
+
 //        boardView.delegate = self
 //        messageDiskSize = messageDiskSizeConstraint.constant
 //
@@ -37,8 +27,8 @@ class ViewController: UIViewController {
 //        } catch _ {
 //            newGame()
 //        }
-//    }
-//
+    }
+
 //    private var viewHasAppeared: Bool = false
 //    override func viewDidAppear(_ animated: Bool) {
 //        super.viewDidAppear(animated)

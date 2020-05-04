@@ -44,6 +44,9 @@ class ViewControllerView: UIView {
         view.frame = bounds
         addSubview(view)
     }
+    
+    func setupViews() {
+    }
 
 //    /// どちらの色のプレイヤーのターンかを表します。ゲーム終了時は `nil` です。
 //    private var turn: Disk? = .dark
