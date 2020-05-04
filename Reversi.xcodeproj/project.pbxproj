@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26BD9055246021B400FA850D /* ViewControllerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26BD9054246021B400FA850D /* ViewControllerView.xib */; };
+		26BD90572460250D00FA850D /* ViewControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BD90562460250D00FA850D /* ViewControllerView.swift */; };
 		D636B39F23D35043007F370F /* DiskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D636B39E23D35043007F370F /* DiskView.swift */; };
 		D642BDB423A9FE4500396732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642BDB323A9FE4500396732 /* AppDelegate.swift */; };
 		D642BDB623A9FE4500396732 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D642BDB523A9FE4500396732 /* SceneDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26BD9054246021B400FA850D /* ViewControllerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewControllerView.xib; sourceTree = "<group>"; };
+		26BD90562460250D00FA850D /* ViewControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerView.swift; sourceTree = "<group>"; };
 		D636B39E23D35043007F370F /* DiskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskView.swift; sourceTree = "<group>"; };
 		D642BDB023A9FE4500396732 /* Reversi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reversi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D642BDB323A9FE4500396732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +75,6 @@
 			children = (
 				D642BDB723A9FE4500396732 /* ViewController.swift */,
 			);
-			name = Controllers;
 			path = Controllers;
 			sourceTree = "<group>";
 		};
@@ -79,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -88,7 +90,6 @@
 			children = (
 				D642BDD723AA0B5700396732 /* Disk.swift */,
 			);
-			name = Models;
 			path = Models;
 			sourceTree = "<group>";
 		};
@@ -98,7 +99,6 @@
 				26BD9052246017FC00FA850D /* Binders */,
 				26BD9051246017F900FA850D /* Stores */,
 			);
-			name = States;
 			path = States;
 			sourceTree = "<group>";
 		};
@@ -106,15 +106,15 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
 		26BD904F246017A600FA850D /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				26BD90562460250D00FA850D /* ViewControllerView.swift */,
+				26BD9054246021B400FA850D /* ViewControllerView.xib */,
 			);
-			name = Pages;
 			path = Pages;
 			sourceTree = "<group>";
 		};
@@ -125,7 +125,6 @@
 				D642BDD523AA0B3900396732 /* CellView.swift */,
 				D636B39E23D35043007F370F /* DiskView.swift */,
 			);
-			name = Components;
 			path = Components;
 			sourceTree = "<group>";
 		};
@@ -133,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Stores;
 			path = Stores;
 			sourceTree = "<group>";
 		};
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = Binders;
 			path = Binders;
 			sourceTree = "<group>";
 		};
@@ -151,7 +148,6 @@
 				26BD9050246017A900FA850D /* Components */,
 				26BD904F246017A600FA850D /* Pages */,
 			);
-			name = Views;
 			path = Views;
 			sourceTree = "<group>";
 		};
@@ -283,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D642BDC023A9FE4700396732 /* LaunchScreen.storyboard in Resources */,
+				26BD9055246021B400FA850D /* ViewControllerView.xib in Resources */,
 				D642BDBD23A9FE4700396732 /* Assets.xcassets in Resources */,
 				D642BDBB23A9FE4500396732 /* Main.storyboard in Resources */,
 			);
@@ -307,6 +304,7 @@
 				D642BDD823AA0B5700396732 /* Disk.swift in Sources */,
 				D642BDB823A9FE4500396732 /* ViewController.swift in Sources */,
 				D642BDDC23AA137C00396732 /* BoardView.swift in Sources */,
+				26BD90572460250D00FA850D /* ViewControllerView.swift in Sources */,
 				D642BDB423A9FE4500396732 /* AppDelegate.swift in Sources */,
 				D642BDB623A9FE4500396732 /* SceneDelegate.swift in Sources */,
 			);
