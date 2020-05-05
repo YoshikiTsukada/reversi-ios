@@ -1,7 +1,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    private let store: ViewControllerStore
+    private var store: ViewControllerStore = .init()
     private var binder: ViewControllerViewBinder?
 
 //    /// どちらの色のプレイヤーのターンかを表します。ゲーム終了時は `nil` です。
@@ -11,23 +11,14 @@ class ViewController: UIViewController {
 //    private var isAnimating: Bool { animationCanceller != nil }
 //
 //    private var playerCancellers: [Disk: Canceller] = [:]
-    
-    init() {
-        store = ViewControllerStore()
-        ActionCreator.createStore(with: store)
-        
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ActionCreator.createStore(with: store)
+
         if let view = view as? ViewControllerView {
-            binder = ViewControllerViewBinder(view: view)
+            binder = ViewControllerViewBinder(view: view, store: store)
         }
 
 //        boardView.delegate = self

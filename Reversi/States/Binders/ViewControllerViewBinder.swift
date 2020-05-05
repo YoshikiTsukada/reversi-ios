@@ -10,10 +10,11 @@ import UIKit
 
 class ViewControllerViewBinder {
     private let view: ViewControllerView
-    private let store: ViewControllerStore = .shared
+    private let store: ViewControllerStore
     
-    init(view: ViewControllerView) {
+    init(view: ViewControllerView, store: ViewControllerStore) {
         self.view = view
+        self.store = store
         
         view.setupViews()
         
