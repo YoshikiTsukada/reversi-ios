@@ -1,4 +1,6 @@
 import UIKit
+import RxCocoa
+import RxSwift
 
 private let animationDuration: TimeInterval = 0.25
 
@@ -135,5 +137,9 @@ public class CellView: UIView {
     
     public var allControlEvents: UIControl.Event {
         button.allControlEvents
+    }
+
+    var buttonObservable: Observable<Void> {
+        button.rx.tap.asObservable()
     }
 }

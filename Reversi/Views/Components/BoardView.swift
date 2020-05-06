@@ -3,7 +3,7 @@ import UIKit
 private let lineWidth: CGFloat = 2
 
 public class BoardView: UIView {
-    private var cellViews: [CellView] = []
+    var cellViews: [CellView] = []
     private var actions: [CellSelectionAction] = []
     
     /// 盤の幅（ `8` ）を表します。
@@ -118,7 +118,7 @@ public class BoardView: UIView {
         setDisk(.light, atX: BoardView.width / 2, y: BoardView.height / 2, animated: false)
     }
     
-    private func cellViewAt(x: Int, y: Int) -> CellView? {
+    func cellViewAt(x: Int, y: Int) -> CellView? {
         guard xRange.contains(x) && yRange.contains(y) else { return nil }
         return cellViews[y * BoardView.width + x]
     }

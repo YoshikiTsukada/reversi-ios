@@ -9,11 +9,11 @@
 import UIKit
 
 class ViewControllerView: UIView {
-    @IBOutlet private var boardView: BoardView!
+    @IBOutlet var boardView: BoardView!
     
-    @IBOutlet private var messageDiskView: DiskView!
-    @IBOutlet private var messageLabel: UILabel!
-    @IBOutlet private var messageDiskSizeConstraint: NSLayoutConstraint!
+    @IBOutlet var messageDiskView: DiskView!
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var messageDiskSizeConstraint: NSLayoutConstraint!
     /// Storyboard 上で設定されたサイズを保管します。
     /// 引き分けの際は `messageDiskView` の表示が必要ないため、
     /// `messageDiskSizeConstraint.constant` を `0` に設定します。
@@ -22,9 +22,9 @@ class ViewControllerView: UIView {
     /// その際に `messageDiskSize` に保管された値を使います。
     private var messageDiskSize: CGFloat!
 
-    @IBOutlet private var playerControls: [UISegmentedControl]!
-    @IBOutlet private var countLabels: [UILabel]!
-    @IBOutlet private var playerActivityIndicators: [UIActivityIndicatorView]!
+    @IBOutlet var playerControls: [UISegmentedControl]!
+    @IBOutlet var countLabels: [UILabel]!
+    @IBOutlet var playerActivityIndicators: [UIActivityIndicatorView]!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
